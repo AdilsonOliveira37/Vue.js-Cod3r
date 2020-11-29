@@ -11,6 +11,7 @@
         data (dica: event.target.value) -->
     <div>
         <input v-on:keydown="pegaValor" type="text">
+        <input v-on:keydown="valor = $event.target.value" type="text">
         <p>{{ valor }}</p>
     </div>
     <hr>
